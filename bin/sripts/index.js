@@ -26,6 +26,6 @@ let CLICKMEPLEASE = setInterval(function () {
     if (alert == 5) contenido.classList.add("tada")
     if (alert == 6) contenido.classList.add("heartBeat")
    
-    console.log(alert)
+  
 
-}, 30000)
+}, 10000)
