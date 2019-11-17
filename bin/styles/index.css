@@ -40,12 +40,12 @@ body {
 
 
 .content {
-   
-display: flex;
-flex-direction: column;
 
-margin: auto;
-    
+    display: flex;
+    flex-direction: column;
+
+    margin: auto;
+
 }
 
 .bienvenidos {
@@ -57,7 +57,7 @@ margin: auto;
     font-size: 60px;
     font-weight: 900;
     padding-bottom: 35px;
-  
+
     transition: font-size 0.5s ease-in-out;
 }
 
@@ -80,7 +80,7 @@ margin: auto;
 }
 
 .headerLeft {
-    margin-left: 30px;    
+    margin-left: 30px;
     width: 20px;
     transition: width 0.5s ease-in-out;
 
@@ -88,7 +88,7 @@ margin: auto;
 }
 
 .headerRight {
-    margin-right: -14px;  
+    margin-right: -14px;
     width: 300px;
     transition: width 0.5s ease-in-out;
 
@@ -98,7 +98,7 @@ margin: auto;
     margin-left: -14px;
     width: 300px;
     transition: width 0.5s ease-in-out;
-  
+
 }
 
 .footerRight {
@@ -108,7 +108,8 @@ margin: auto;
 
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1000px),
+(max-height: 500px) {
 
     .bienvenidos {
 
@@ -126,14 +127,11 @@ margin: auto;
         height: 50px;
         transition: font-size 0.5s ease-in-out, line-height 0.5s ease-in-out, width 0.5s ease-in-out, height 0.5s ease-in-out;
 
-
     }
-
-
 
     .headerLeft {
 
-        margin-left: 15px;    
+        margin-left: 15px;
         width: 15px;
         transition: width 0.5s ease-in-out;
 
@@ -159,6 +157,61 @@ margin: auto;
     .bienvenidos {
 
         padding-bottom: 15px;
-            
+
+    }
+}
+
+
+@media (max-width: 600px),
+(max-height: 400px) {
+
+    .bienvenidos {
+
+        font-size: 30px;
+        transition: font-size 0.5s ease-in-out;
+
+    }
+
+    .btn_empezar {
+
+
+        font-size: 20px;
+        line-height: 50px;
+        width: 200px;
+        height: 50px;
+        transition: font-size 0.5s ease-in-out, line-height 0.5s ease-in-out, width 0.5s ease-in-out, height 0.5s ease-in-out;
+
+
+    }
+
+    .headerLeft {
+
+        margin-left: 15px;
+        width: 10px;
+        transition: width 0.5s ease-in-out;
+
+    }
+
+    .headerRight {
+        width: 150px;
+        transition: width 0.5s ease-in-out;
+    }
+
+    .footerLeft {
+        width: 150px;
+        transition: width 0.5s ease-in-out;
+    }
+
+    .footerRight {
+        width: 40px;
+        margin-right: 0px;
+        margin-bottom: -70px;
+        transition: width 0.5s ease-in-out;
+    }
+
+    .bienvenidos {
+
+        padding-bottom: 15px;
+
     }
 }
