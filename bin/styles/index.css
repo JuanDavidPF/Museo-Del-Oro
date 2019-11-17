@@ -235,7 +235,7 @@ body {
 
     .bienvenidos {
 
-        font-size: 25px;
+        font-size: 30px;
         margin-bottom: -10px;
         transition: font-size 0.5s ease-in-out, margin-bottom 0.5s ease-in-out;
     }
@@ -243,10 +243,10 @@ body {
     .btn_empezar {
 
 
-        font-size: 15px;
-        line-height: 40px;
-        width: 170px;
-        height: 40px;
+        font-size: 25px;
+        line-height: 50px;
+        width: 200px;
+        height: 50px;
         transition: font-size 0.5s ease-in-out, line-height 0.5s ease-in-out, width 0.5s ease-in-out, height 0.5s ease-in-out;
 
 
@@ -299,6 +299,29 @@ body {
 
     }
 }
+
+@media (max-width: 350px) {
+    .bienvenidos {
+
+        font-size: 22px;
+
+    }
+
+    .btn_empezar {
+
+
+        font-size: 15px;
+        line-height: 35px;
+        width: 150px;
+        height: 35px;
+        transition: font-size 0.5s ease-in-out, line-height 0.5s ease-in-out, width 0.5s ease-in-out, height 0.5s ease-in-out;
+
+
+    }
+
+
+}
+
 
 @media (max-width: 200px),
 (max-height: 250px) {
