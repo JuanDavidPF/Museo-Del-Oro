@@ -109,7 +109,7 @@ body {
 }
 
 @media (max-width: 1000px),
-(max-height: 500px) {
+(max-height: 550px) {
 
     .bienvenidos {
 
@@ -132,18 +132,73 @@ body {
     .headerLeft {
 
         margin-left: 15px;
-        width: 15px;
+        width: 19px;
         transition: width 0.5s ease-in-out;
 
     }
 
     .headerRight {
-        width: 220px;
+        width: 270px;
         transition: width 0.5s ease-in-out;
     }
 
     .footerLeft {
-        width: 220px;
+        width: 270px;
+        transition: width 0.5s ease-in-out;
+    }
+
+    .footerRight {
+        width: 150px;
+        margin-right: 0px;
+        margin-bottom: -70px;
+        transition: width 0.5s ease-in-out;
+    }
+
+    .bienvenidos {
+
+        padding-bottom: 15px;
+
+    }
+}
+
+
+@media (max-width: 600px),
+(max-height: 465px) {
+
+    .bienvenidos {
+
+        font-size: 30px;
+        transition: font-size 0.5s ease-in-out;
+
+    }
+
+    .btn_empezar {
+
+
+        font-size: 20px;
+        line-height: 50px;
+        width: 200px;
+        height: 50px;
+        transition: font-size 0.5s ease-in-out, line-height 0.5s ease-in-out, width 0.5s ease-in-out, height 0.5s ease-in-out;
+
+
+    }
+
+    .headerLeft {
+
+        margin-left: 15px;
+        width: 12px;
+        transition: width 0.5s ease-in-out;
+
+    }
+
+    .headerRight {
+        width: 200px;
+        transition: width 0.5s ease-in-out;
+    }
+
+    .footerLeft {
+        width: 200px;
         transition: width 0.5s ease-in-out;
     }
 
@@ -161,13 +216,11 @@ body {
     }
 }
 
-
-@media (max-width: 600px),
-(max-height: 400px) {
+@media (max-width: 300px) {
 
     .bienvenidos {
 
-        font-size: 30px;
+        font-size: 20px;
         transition: font-size 0.5s ease-in-out;
 
     }
@@ -175,43 +228,14 @@ body {
     .btn_empezar {
 
 
-        font-size: 20px;
-        line-height: 50px;
-        width: 200px;
-        height: 50px;
+        font-size: 15px;
+        line-height: 30px;
+        width: 150px;
+        height: 30px;
         transition: font-size 0.5s ease-in-out, line-height 0.5s ease-in-out, width 0.5s ease-in-out, height 0.5s ease-in-out;
 
 
     }
 
-    .headerLeft {
-
-        margin-left: 15px;
-        width: 10px;
-        transition: width 0.5s ease-in-out;
-
-    }
-
-    .headerRight {
-        width: 150px;
-        transition: width 0.5s ease-in-out;
-    }
-
-    .footerLeft {
-        width: 150px;
-        transition: width 0.5s ease-in-out;
-    }
-
-    .footerRight {
-        width: 40px;
-        margin-right: 0px;
-        margin-bottom: -70px;
-        transition: width 0.5s ease-in-out;
-    }
-
-    .bienvenidos {
-
-        padding-bottom: 15px;
-
-    }
+   
 }
