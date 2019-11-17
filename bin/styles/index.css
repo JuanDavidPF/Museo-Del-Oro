@@ -161,7 +161,7 @@ body {
     .bienvenidos {
 
         font-size: 30px;
-        
+
         margin-bottom: 0px;
         transition: font-size 0.5s ease-in-out, margin-bottom 0.5s ease-in-out;
     }
@@ -228,12 +228,17 @@ body {
 }
 
 
-@media (max-width: 600px),
-(max-height: 465px) {
+
+
+
+/*celulares pequeños*/
+
+@media (max-width: 500px),
+(max-height: 550px) {
 
     .bienvenidos {
 
-        font-size: 30px;
+        font-size: 20px;
         margin-bottom: -10px;
         transition: font-size 0.5s ease-in-out, margin-bottom 0.5s ease-in-out;
     }
@@ -241,10 +246,10 @@ body {
     .btn_empezar {
 
 
-        font-size: 20px;
-        line-height: 50px;
-        width: 200px;
-        height: 50px;
+        font-size: 15px;
+        line-height: 30px;
+        width: 150px;
+        height: 30px;
         transition: font-size 0.5s ease-in-out, line-height 0.5s ease-in-out, width 0.5s ease-in-out, height 0.5s ease-in-out;
 
 
@@ -253,24 +258,24 @@ body {
     .headerLeft {
 
         margin-left: 15px;
-        width: 12px;
+        width: 8px;
         transition: width 0.5s ease-in-out;
 
     }
 
     .headerRight {
-        width: 200px;
+        width: 140px;
         transition: width 0.5s ease-in-out;
     }
 
     .footerLeft {
-        width: 200px;
+        width: 140px;
         transition: width 0.5s ease-in-out, margin-left 0.5s ease-in-out;
 
     }
 
     .footerRight {
-        width: 100px;
+        width: 50px;
         margin-right: 0px;
         margin-bottom: -70px;
         transition: width 0.5s ease-in-out;
@@ -298,21 +303,22 @@ body {
     }
 }
 
-@media (max-width: 300px) {
+@media (max-width: 200px),
+(max-height: 250px) {
 
     .bienvenidos {
 
-        font-size: 20px;
+        font-size: 15px;
 
     }
 
     .btn_empezar {
 
 
-        font-size: 15px;
-        line-height: 30px;
-        width: 150px;
-        height: 30px;
+        font-size: 10px;
+        line-height: 20px;
+        width: 100px;
+        height: 20px;
         transition: font-size 0.5s ease-in-out, line-height 0.5s ease-in-out, width 0.5s ease-in-out, height 0.5s ease-in-out;
 
 
@@ -335,6 +341,33 @@ body {
 
 
     }
+
+    .headerLeft {
+
+        margin-left: 15px;
+        width: 5px;
+        transition: width 0.5s ease-in-out;
+
+    }
+
+    .headerRight {
+        width: 100px;
+        transition: width 0.5s ease-in-out;
+    }
+
+    .footerLeft {
+        width: 100px;
+        transition: width 0.5s ease-in-out, margin-left 0.5s ease-in-out;
+
+    }
+
+    .footerRight {
+        width: 20px;
+        margin-right: 0px;
+        margin-bottom: -70px;
+        transition: width 0.5s ease-in-out;
+    }
+
 
 
 }
