@@ -228,17 +228,14 @@ body {
 }
 
 
-
-
-
-/*celulares pequeños*/
+/*celulares */
 
 @media (max-width: 500px),
 (max-height: 550px) {
 
     .bienvenidos {
 
-        font-size: 20px;
+        font-size: 25px;
         margin-bottom: -10px;
         transition: font-size 0.5s ease-in-out, margin-bottom 0.5s ease-in-out;
     }
@@ -247,9 +244,9 @@ body {
 
 
         font-size: 15px;
-        line-height: 30px;
-        width: 150px;
-        height: 30px;
+        line-height: 40px;
+        width: 170px;
+        height: 40px;
         transition: font-size 0.5s ease-in-out, line-height 0.5s ease-in-out, width 0.5s ease-in-out, height 0.5s ease-in-out;
 
 
