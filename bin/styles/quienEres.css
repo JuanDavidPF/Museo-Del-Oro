@@ -1,6 +1,9 @@
 * {
     margin: 0;
-    user-select: none;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
 }
 
 html {
@@ -9,8 +12,13 @@ html {
 }
 
 body {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     width: 100%;
     height: 100%;
     background-color: #EDEDED;
@@ -29,6 +37,8 @@ body {
 }
 
 .encabezado {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 
     background-image: url("./../../data/img/background.png");
@@ -39,8 +49,14 @@ body {
     width: 100%;
     height: 120px;
 
-    justify-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+
+        -ms-flex-pack: center;
+
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     border-bottom-right-radius: 50px;
     border-bottom-left-radius: 50px;
 
@@ -49,6 +65,8 @@ body {
     font-family: 'Nunito', sans-serif;
     font-weight: 800;
     font-size: 30px;
+    -webkit-transition: height 0.5s ease-in-out, font-size 0.5s ease-in-out;
+    -o-transition: height 0.5s ease-in-out, font-size 0.5s ease-in-out;
     transition: height 0.5s ease-in-out, font-size 0.5s ease-in-out;
 
 
@@ -57,11 +75,18 @@ body {
 .container {
 
     margin: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     width: 80%;
     height: 80%;
-    flex-direction: column;
-    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 
 
 
@@ -70,19 +95,34 @@ body {
 .perfil {
 
     margin: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     width: 500px;
     height: 150px;
     background: #FFF7EC;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 40px;
+    border-style: solid;
+    border-width: 0;
+    border-color: rgb(235, 153, 59);
+
 
     font-family: 'Nunito', sans-serif;
     font-size: 25px;
     font-weight: 800;
 
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+
+        -ms-flex-pack: justify;
+
+            justify-content: space-between;
+    -webkit-transition: width 0.5s ease-in-out, height 0.5s ease-in-out, font-size 0.5s ease-in-out;
+    -o-transition: width 0.5s ease-in-out, height 0.5s ease-in-out, font-size 0.5s ease-in-out;
     transition: width 0.5s ease-in-out, height 0.5s ease-in-out, font-size 0.5s ease-in-out;
 
 }
@@ -91,20 +131,31 @@ body {
     padding-left: 30px;
     padding-right: 20px;
     width: 100px;
+    -webkit-transition: width 0.5s ease-in-out;
+    -o-transition: width 0.5s ease-in-out;
     transition: width 0.5s ease-in-out;
 
 }
 
 .left {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: row;
-    align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 
 }
 
 .go {
     width: 40px;
     padding-right: 30px;
+    -webkit-transition: width 0.5s ease-in-out;
+    -o-transition: width 0.5s ease-in-out;
     transition: width 0.5s ease-in-out;
     cursor: pointer;
 }
@@ -127,6 +178,8 @@ body {
         font-size: 20px;
         border-bottom-right-radius: 30px;
         border-bottom-left-radius: 30px;
+        -webkit-transition: height 0.5s ease-in-out, font-size 0.5s ease-in-out;
+        -o-transition: height 0.5s ease-in-out, font-size 0.5s ease-in-out;
         transition: height 0.5s ease-in-out, font-size 0.5s ease-in-out;
 
     }
@@ -135,6 +188,8 @@ body {
         width: 370px;
         height: 90px;
         font-size: 17px;
+        -webkit-transition: width 0.5s ease-in-out, height 0.5s ease-in-out, font-size 0.5s ease-in-out;
+        -o-transition: width 0.5s ease-in-out, height 0.5s ease-in-out, font-size 0.5s ease-in-out;
         transition: width 0.5s ease-in-out, height 0.5s ease-in-out, font-size 0.5s ease-in-out;
 
     }
@@ -143,12 +198,16 @@ body {
 
         padding-right: 12px;
         width: 80px;
+        -webkit-transition: width 0.5s ease-in-out;
+        -o-transition: width 0.5s ease-in-out;
         transition: width 0.5s ease-in-out;
 
     }
 
     .go {
         width: 26px;
+        -webkit-transition: width 0.5s ease-in-out;
+        -o-transition: width 0.5s ease-in-out;
         transition: width 0.5s ease-in-out;
 
     }
@@ -167,6 +226,8 @@ body {
         font-size: 15px;
         border-bottom-right-radius: 30px;
         border-bottom-left-radius: 30px;
+        -webkit-transition: height 0.5s ease-in-out, font-size 0.5s ease-in-out;
+        -o-transition: height 0.5s ease-in-out, font-size 0.5s ease-in-out;
         transition: height 0.5s ease-in-out, font-size 0.5s ease-in-out;
 
     }
@@ -188,6 +249,8 @@ body {
         width: 220px;
         height: 70px;
         font-size: 12px;
+        -webkit-transition: width 0.5s ease-in-out, height 0.5s ease-in-out, font-size 0.5s ease-in-out;
+        -o-transition: width 0.5s ease-in-out, height 0.5s ease-in-out, font-size 0.5s ease-in-out;
         transition: width 0.5s ease-in-out, height 0.5s ease-in-out, font-size 0.5s ease-in-out;
 
     }
@@ -196,6 +259,8 @@ body {
         padding-left: 10px;
         padding-right: 10px;
         width: 60px;
+        -webkit-transition: width 0.5s ease-in-out;
+        -o-transition: width 0.5s ease-in-out;
         transition: width 0.5s ease-in-out;
 
     }
@@ -203,6 +268,8 @@ body {
     .go {
         width: 20px;
         padding-right: 15px;
+        -webkit-transition: width 0.5s ease-in-out;
+        -o-transition: width 0.5s ease-in-out;
         transition: width 0.5s ease-in-out;
 
     }
@@ -219,6 +286,8 @@ body {
         font-size: 13px;
         border-bottom-right-radius: 20px;
         border-bottom-left-radius: 20px;
+        -webkit-transition: height 0.5s ease-in-out, font-size 0.5s ease-in-out;
+        -o-transition: height 0.5s ease-in-out, font-size 0.5s ease-in-out;
         transition: height 0.5s ease-in-out, font-size 0.5s ease-in-out;
 
     }
@@ -235,6 +304,8 @@ body {
         width: 150px;
         height: 60px;
         font-size: 10px;
+        -webkit-transition: width 0.5s ease-in-out, height 0.5s ease-in-out, font-size 0.5s ease-in-out;
+        -o-transition: width 0.5s ease-in-out, height 0.5s ease-in-out, font-size 0.5s ease-in-out;
         transition: width 0.5s ease-in-out, height 0.5s ease-in-out, font-size 0.5s ease-in-out;
     }
 
@@ -242,12 +313,16 @@ body {
         padding-left: 5px;
         padding-right: 5px;
         width: 50px;
+        -webkit-transition: width 0.5s ease-in-out;
+        -o-transition: width 0.5s ease-in-out;
         transition: width 0.5s ease-in-out;
     }
 
     .go {
         width: 15px;
         padding-right: 10px;
+        -webkit-transition: width 0.5s ease-in-out;
+        -o-transition: width 0.5s ease-in-out;
         transition: width 0.5s ease-in-out;
 
     }
