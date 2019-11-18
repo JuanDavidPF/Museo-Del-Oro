@@ -1,28 +1,38 @@
 let contenido = document.querySelector(".content")
+let cortina = document.querySelector(".courtain")
+let empezar = document.querySelector(".btn_empezar")
+
+let header = document.querySelector(".header")
+let footer = document.querySelector(".footer")
+let footerLeft = document.querySelector(".footerLeft")
+let footerRight = document.querySelector(".footerRight")
+let headerLeft = document.querySelector(".headerLeft")
+let headerRight = document.querySelector(".headerRight")
 
 
 
-let stopZoom = setTimeout(function () {
-    contenido.classList.remove("zoomIn")
-}, 1000)
+if (document.location.href.includes("loaded")) {
+
+    let animarPantalla = setTimeout(function () {
+        cortina.classList.add("slideOutUp")
+        contenido.classList.add("zoomIn")
+        header.classList.add("slideInDown")
+        footer.classList.add("slideInUp")
+        footerLeft.classList.add("slideInLeft")
+        headerLeft.classList.add("slideInLeft")
+        footerRight.classList.add("slideInRight")
+        headerRight.classList.add("slideInRight")
+
+    }, 800)
+}
 
 
-let subirCortina = setTimeout(function () {
-    let cortina = document.querySelector(".courtain")
-    cortina.classList.add("slideOutUp")
-}, 5000)
+
+
 
 
 let animarPantalla = setTimeout(function () {
-
-    let header = document.querySelector(".header")
-    let footer = document.querySelector(".footer")
-    let footerLeft = document.querySelector(".footerLeft")
-    let footerRight = document.querySelector(".footerRight")
-    let headerLeft = document.querySelector(".headerLeft")
-    let headerRight = document.querySelector(".headerRight")
-
-
+    cortina.classList.add("slideOutUp")
     contenido.classList.add("zoomIn")
     header.classList.add("slideInDown")
     footer.classList.add("slideInUp")
@@ -30,7 +40,7 @@ let animarPantalla = setTimeout(function () {
     headerLeft.classList.add("slideInLeft")
     footerRight.classList.add("slideInRight")
     headerRight.classList.add("slideInRight")
-}, 5010)
+}, 2500)
 
 
 
@@ -57,6 +67,22 @@ let CLICKMEPLEASE = setInterval(function () {
     if (alert == 5) contenido.classList.add("tada")
     if (alert == 6) contenido.classList.add("heartBeat")
 
-
-
 }, 10000)
+
+empezar.addEventListener("click", function () {
+
+    contenido.classList.add("zoomOut")
+    header.classList.add("slideOutUp")
+    footer.classList.add("slideOutDown")
+    footerLeft.classList.add("slideOutLeft")
+    headerLeft.classList.add("slideOutLeft")
+    footerRight.classList.add("slideOutRight")
+    headerRight.classList.add("slideOutRight")
+
+    pasarPagina = setTimeout(function () {
+
+        document.location.href = "./bin/views/quienEres.html"
+
+    }, 500)
+
+})
