@@ -1,29 +1,36 @@
 * {
     margin: 0;
+    user-select: none;
 }
 
-html,
-body {
+html {
+    width: 100%;
+    height: 100%;
+}
 
+body {
+    display: flex;
+    flex-direction: column;
     width: 100%;
     height: 100%;
     background-color: #EDEDED;
+
 }
 
 
 .back {
+
     position: absolute;
     display: none;
     width: 50px;
-    top: 0;
-    left: 0;
-    margin-left: 40px;
-    margin-top: 30px;
+    left: 0%;
+    margin-left: 30px;
 
 }
 
 .encabezado {
     display: flex;
+
     background-image: url("./../../data/img/background.png");
     background-size: cover;
     background-position: center;
@@ -31,6 +38,7 @@ body {
 
     width: 100%;
     height: 120px;
+
     justify-content: center;
     align-items: center;
     border-bottom-right-radius: 50px;
@@ -41,18 +49,21 @@ body {
     font-family: 'Nunito', sans-serif;
     font-weight: 800;
     font-size: 30px;
+    transition: height 0.5s ease-in-out, font-size 0.5s ease-in-out;
 
-    margin-bottom: 20px;
 
 }
 
 .container {
 
+    margin: auto;
     display: flex;
-    width: 100%;
+    width: 80%;
     height: 80%;
-    align-items: center;
     flex-direction: column;
+    align-items: center;
+
+
 
 }
 
@@ -72,7 +83,7 @@ body {
     font-weight: 800;
 
     justify-content: space-between;
-    margin-bottom: 5px;
+    transition: width 0.5s ease-in-out, height 0.5s ease-in-out, font-size 0.5s ease-in-out;
 
 }
 
@@ -80,6 +91,8 @@ body {
     padding-left: 30px;
     padding-right: 20px;
     width: 100px;
+    transition: width 0.5s ease-in-out;
+
 }
 
 .left {
@@ -92,202 +105,150 @@ body {
 .go {
     width: 40px;
     padding-right: 30px;
+    transition: width 0.5s ease-in-out;
+cursor: pointer;
+}
+
+
+
+@media (max-width: 650px) {
+
+
+    .back {
+        display: block;
+        width: 30px;
+    }
+
+    .encabezado {
+
+
+        width: 100%;
+        height: 80px;
+        font-size: 20px;
+        border-bottom-right-radius: 30px;
+        border-bottom-left-radius: 30px;
+        transition: height 0.5s ease-in-out, font-size 0.5s ease-in-out;
+
+    }
+
+    .perfil {
+        width: 370px;
+        height: 90px;
+        font-size: 17px;
+        transition: width 0.5s ease-in-out, height 0.5s ease-in-out, font-size 0.5s ease-in-out;
+
+    }
+
+    .perfilIcon {
+
+        padding-right: 12px;
+        width: 80px;
+        transition: width 0.5s ease-in-out;
+
+    }
+
+    .go {
+        width: 26px;
+        transition: width 0.5s ease-in-out;
+
+    }
 }
 
 
 
 
-@media (max-width: 1000px),
-(max-height: 550px) {
+@media (max-width: 500px) {
+
+    .encabezado {
+
+
+        width: 100%;
+        height: 60px;
+        font-size: 15px;
+        border-bottom-right-radius: 30px;
+        border-bottom-left-radius: 30px;
+        transition: height 0.5s ease-in-out, font-size 0.5s ease-in-out;
+
+    }
+
+    .back {
+
+        width: 25px;
+    }
+
+
+    .container {
+
+        width: 100%;
+        height: 70%;
+
+    }
+
+    .perfil {
+        width: 220px;
+        height: 70px;
+        font-size: 12px;
+        transition: width 0.5s ease-in-out, height 0.5s ease-in-out, font-size 0.5s ease-in-out;
+
+    }
+
+    .perfilIcon {
+        padding-left: 10px;
+        padding-right: 10px;
+        width: 60px;
+        transition: width 0.5s ease-in-out;
+
+    }
+
+    .go {
+        width: 20px;
+        padding-right: 15px;
+        transition: width 0.5s ease-in-out;
+
+    }
+
+}
+
+
+@media (max-width: 250px) {
+
+    .encabezado {
+
+        width: 100%;
+        height: 50px;
+        font-size: 13px;
+        border-bottom-right-radius: 20px;
+        border-bottom-left-radius: 20px;
+        transition: height 0.5s ease-in-out, font-size 0.5s ease-in-out;
+
+    }
 
     .back {
         display: block;
         width: 20px;
-        margin-left: 20px;
-        margin-top: 25px;
-
-    }
-
-    .encabezado {
-
-
-        height: 60px;
-        border-bottom-right-radius: 20px;
-        border-bottom-left-radius: 20px;
-        font-weight: 800;
-        font-size: 20px;
-        margin-bottom: 20px;
-    }
-
-    .perfil {
-
-        margin-bottom: 10px;
-        width: 300px;
-        height: 80px;
-        font-size: 16px;
-
-    }
-
-    .perfilIcon {
-        padding-left: 15px;
-        padding-right: 10px;
-        width: 65px;
-    }
-
-
-
-    .go {
-        width: 22px;
-        padding-right: 15px;
-    }
-
-}
-
-@media (max-width: 500px),
-(max-height: 550px) {
-
-    .back {
-
-        width: 20px;
-        margin-left: 20px;
-        margin-top: 25px;
-
-    }
-
-    .encabezado {
-
-
-        height: 60px;
-        border-bottom-right-radius: 20px;
-        border-bottom-left-radius: 20px;
-        font-weight: 800;
-        font-size: 13px;
-        margin-bottom: 20px;
-    }
-
-    .perfil {
-
-        margin-bottom: 5px;
-        width: 220px;
-        height: 70px;
-        font-size: 13px;
-
-    }
-
-    .perfilIcon {
-        padding-left: 15px;
-        padding-right: 10px;
-        width: 55px;
-    }
-
-
-
-    .go {
-        width: 17px;
-        padding-right: 15px;
-    }
-}
-
-
-
-
-
-
-
-
-@media (max-width: 350px) {
-
-    .back {
-
-        width: 20px;
-        margin-left: 20px;
-        margin-top: 25px;
-
-    }
-
-    .encabezado {
-
-
-        height: 60px;
-        border-bottom-right-radius: 20px;
-        border-bottom-left-radius: 20px;
-        font-weight: 800;
-        font-size: 13px;
-        margin-bottom: 20px;
-    }
-
-    .perfil {
-
-
-        margin-bottom: 5px;
-        width: 170px;
-        height: 60px;
-        font-size: 12px;
-
-    }
-
-    .perfilIcon {
-        padding-left: 5px;
-        padding-right: 10px;
-        width: 47px;
-    }
-
-
-
-    .go {
-        width: 15px;
-        padding-right: 10px;
-    }
-}
-
-
-
-
-
-
-@media (max-width: 200px),
-(max-height: 250px) {
-
-    .back {
-
-        width: 20px;
         margin-left: 10px;
-        margin-top: 25px;
-
     }
 
-    .encabezado {
 
-
-        height: 60px;
-        border-bottom-right-radius: 20px;
-        border-bottom-left-radius: 20px;
-        font-weight: 800;
-        font-size: 11px;
-        font-weight: 600;
-        ] margin-bottom: 20px;
-    }
 
     .perfil {
-
-        margin-bottom: 5px;
-        width: 120px;
-        height: 50px;
-        font-size: 9px;
-
+        width: 150px;
+        height: 60px;
+        font-size: 10px;
+        transition: width 0.5s ease-in-out, height 0.5s ease-in-out, font-size 0.5s ease-in-out;
     }
 
     .perfilIcon {
         padding-left: 5px;
         padding-right: 5px;
-        width: 30px;
+        width: 50px;
+        transition: width 0.5s ease-in-out;
     }
 
-
-
     .go {
-        width: 10px;
+        width: 15px;
         padding-right: 10px;
+        transition: width 0.5s ease-in-out;
 
     }
 
