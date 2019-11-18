@@ -89,6 +89,7 @@ body {
 
 .btn_empezar {
 
+    text-decoration: none;
     font-family: 'Nunito', sans-serif;
     text-align: center;
     color: white;
