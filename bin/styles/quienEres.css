@@ -106,7 +106,7 @@ body {
     width: 40px;
     padding-right: 30px;
     transition: width 0.5s ease-in-out;
-cursor: pointer;
+    cursor: pointer;
 }
 
 
