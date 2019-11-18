@@ -4,6 +4,8 @@
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
+    -webkit-touch-callout: none;
+
 }
 
 html {
@@ -161,7 +163,7 @@ body {
 
 
 
-@media (max-width: 650px) {
+@media (max-width: 750px) {
 
 
     .back {
@@ -211,9 +213,6 @@ body {
 
     }
 }
-
-
-
 
 @media (max-width: 500px) {
 
