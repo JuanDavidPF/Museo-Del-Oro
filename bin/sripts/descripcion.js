@@ -1,12 +1,13 @@
 let url = document.location.href
 let perfil;
-let fondo = document.querySelector(".body")
+
 let body = document.querySelector(".fondo")
 let encabezado = document.querySelector(".header")
 let title = document.querySelector(".titleProfile")
 let ornamento = document.querySelector(".ornament")
 let icon = document.querySelector(".icon")
 let back = document.querySelector(".back")
+let boton = document.querySelector(".btn")
 
 if (url.includes("?")) {
 
@@ -18,12 +19,25 @@ if (url.includes("?")) {
 
         case "colegios":
             body.style.backgroundColor = "#B4612B"
-            fondo.style.backgroundColor = "#B4612B"
             body.style.color = "#44240F"
             title.textContent = "Colegios"
             encabezado.style.borderColor = "#44240F"
             ornamento.src = "./../../data/img/ornamento4.png"
             icon.src = "./../../data/img/colIcon.png"
+
+
+            boton.addEventListener("click", function () {
+
+                body.classList.add("slideOutLeft");
+
+                let cambio = setTimeout(function () {
+
+                    document.location.href = "https://alegonzalez01.github.io/colegios-PI/"
+
+                }, 1000)
+
+            })
+
             break;
 
         case "extranjeros":
@@ -33,6 +47,20 @@ if (url.includes("?")) {
             encabezado.style.borderColor = "#44240F"
             ornamento.src = "./../../data/img/ornamento3.png"
             icon.src = "./../../data/img/extIcon.png"
+
+
+            boton.addEventListener("click", function () {
+
+                body.classList.add("slideOutLeft");
+
+                let cambio = setTimeout(function () {
+                    document.location.href = "https://kiwigramer2118.github.io/EXTRANGEROS/inex.html"
+
+
+                }, 1000)
+
+            })
+
             break;
 
         case "ninos":
@@ -42,6 +70,17 @@ if (url.includes("?")) {
             encabezado.style.borderColor = "#65411D"
             ornamento.src = "./../../data/img/ornamento2.png"
             icon.src = "./../../data/img/ninIcon.png"
+
+            boton.addEventListener("click", function () {
+ 
+                body.classList.add("slideOutLeft");
+
+                let cambio = setTimeout(function () {
+
+                    document.location.href = "https://isabella1722.github.io/JuegoFamilia/"
+
+                }, 1000)
+            })
 
             break;
 
@@ -54,7 +93,23 @@ if (url.includes("?")) {
             ornamento.src = "./../../data/img/ornamento1.png"
             icon.src = "./../../data/img/uniIcon.png"
 
+
+            boton.addEventListener("click", function () {
+
+                body.classList.add("slideOutLeft");
+
+                let cambio = setTimeout(function () {
+
+                    document.location.href = "https://metalprime.github.io/-Universitarios--PI/"
+
+
+                }, 1000)
+
+            })
+
             break;
+
+
 
         case "discapacidad":
             body.style.backgroundColor = "#8E7F58"
@@ -64,10 +119,22 @@ if (url.includes("?")) {
             ornamento.src = "./../../data/img/ornamento5.png"
             icon.src = "./../../data/img/disIcon.png"
 
+
+            boton.addEventListener("click", function () {
+
+                body.classList.add("slideOutLeft");
+
+                let cambio = setTimeout(function () {
+
+
+                }, 1000)
+
+            })
+
             break;
-
-
     }
+
+
 
 
     back.addEventListener("click", function () {
@@ -80,13 +147,6 @@ if (url.includes("?")) {
         }, 1000)
 
     })
-
-
-
-
-
-
-
 
 
 
