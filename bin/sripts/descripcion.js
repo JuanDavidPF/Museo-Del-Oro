@@ -32,7 +32,7 @@ if (url.includes("?")) {
 
                 let cambio = setTimeout(function () {
 
-                    document.location.href = "https://alegonzalez01.github.io/colegios-PI/"
+                    document.location.href = "https://alegonzalez01.github.io/Colegios/"
 
                 }, 1000)
 
