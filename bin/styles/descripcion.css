@@ -34,10 +34,12 @@ body {
   margin-top: 30px;
   padding-bottom: 25px;
   border-bottom: 1px solid #475a5b;
+  transition: width 0.5s ease-in-out, height 0.5s ease-in-out;
 }
 
 .back {
   width: 30px;
+  cursor: pointer;
 }
 
 .titleProfile {
@@ -45,12 +47,14 @@ body {
   font-family: "Nunito", sans-serif;
   font-weight: 700;
   font-size: 30px;
+  transition: font-size 0.5s ease-in-out, margin-top 0.5s ease-in-out;
 }
 
 .ornament {
   margin: 0 auto;
   margin-top: 10px;
   width: 200px;
+  transition: margin-top 0.5s ease-in-out, width 0.5s ease-in-out;
 }
 
 .descripcion {
@@ -64,9 +68,11 @@ body {
   font-weight: 400;
 
   color: white;
+  transition: font-size 0.5s ease-in-out, margin-top 0.5s ease-in-out;
 }
 
 .btn {
+  cursor: pointer;
   background-color: white;
   margin: 0 auto;
   width: 175px;
@@ -76,9 +82,98 @@ body {
   font-family: "Nunito", sans-serif;
   border-radius: 30px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  transition: margin-top 0.5s ease-in-out, width 0.5s ease-in-out, height 0.5s ease-in-out, line-height 0.5s ease-in-out,
+    font-size 0.5s ease-in-out;
 }
 
 .icon {
   margin: auto;
-  width:  150px
+  width: 150px;
+  transition: width 0.5s ease-in-out;
+}
+
+@media (min-width: 500px) {
+  .header {
+    transition: width 0.5s ease-in-out, height 0.5s ease-in-out;
+    height: 35px;
+    width: 75%;
+  }
+
+  .titleProfile {
+    margin-top: 60px;
+    font-size: 50px;
+    transition: font-size 0.5s ease-in-out, margin-top 0.5s ease-in-out;
+  }
+
+  .ornament {
+    margin-top: 20px;
+    width: 320px;
+    transition: margin-top 0.5s ease-in-out, width 0.5s ease-in-out;
+  }
+
+  .descripcion {
+    font-size: 24px;
+    margin-top: 60px;
+    transition: font-size 0.5s ease-in-out, margin-top 0.5s ease-in-out;
+  }
+
+  .btn {
+    margin-top: 40px;
+    width: 300px;
+    height: 70px;
+    line-height: 70px;
+    font-size: 25px;
+    transition: margin-top 0.5s ease-in-out, width 0.5s ease-in-out, height 0.5s ease-in-out,
+      line-height 0.5s ease-in-out, font-size 0.5s ease-in-out;
+  }
+
+  .icon {
+    transition: width 0.5s ease-in-out;
+    width: 320px;
+  }
+}
+
+@media (min-width: 1000px) {
+  .back {
+    display: none;
+  }
+
+  .header {
+    transition: width 0.5s ease-in-out, height 0.5s ease-in-out;
+    width: 60%;
+    height: 50px;
+  }
+
+  .titleProfile {
+    margin-top: 60px;
+    font-size: 60px;
+    transition: font-size 0.5s ease-in-out, margin-top 0.5s ease-in-out;
+  }
+
+  .ornament {
+    margin-top: 20px;
+    width: 400px;
+    transition: margin-top 0.5s ease-in-out, width 0.5s ease-in-out;
+  }
+
+  .descripcion {
+    font-size: 30px;
+    margin-top: 60px;
+    transition: font-size 0.5s ease-in-out, margin-top 0.5s ease-in-out;
+  }
+
+  .btn {
+    margin-top: 50px;
+    width: 350px;
+    height: 70px;
+    line-height: 70px;
+    font-size: 30px;
+    transition: margin-top 0.5s ease-in-out, width 0.5s ease-in-out, height 0.5s ease-in-out,
+      line-height 0.5s ease-in-out, font-size 0.5s ease-in-out;
+  }
+
+  .icon {
+    transition: width 0.5s ease-in-out;
+    width: 400px;
+  }
 }
