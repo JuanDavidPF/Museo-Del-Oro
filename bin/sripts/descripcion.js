@@ -21,6 +21,7 @@ if (url.includes("?")) {
             body.style.backgroundColor = "#B4612B"
             body.style.color = "#44240F"
             title.textContent = "Colegios"
+
             encabezado.style.borderColor = "#44240F"
             ornamento.src = "./../../data/img/ornamento4.png"
             icon.src = "./../../data/img/colIcon.png"
@@ -72,7 +73,7 @@ if (url.includes("?")) {
             icon.src = "./../../data/img/ninIcon.png"
 
             boton.addEventListener("click", function () {
- 
+
                 body.classList.add("slideOutLeft");
 
                 let cambio = setTimeout(function () {
@@ -102,7 +103,6 @@ if (url.includes("?")) {
 
                     document.location.href = "https://metalprime.github.io/-Universitarios--PI/"
 
-
                 }, 1000)
 
             })
@@ -126,6 +126,7 @@ if (url.includes("?")) {
 
                 let cambio = setTimeout(function () {
 
+                    document.location.href = "https://luisa1509.github.io/Invidentes-Museo/"
 
                 }, 1000)
 

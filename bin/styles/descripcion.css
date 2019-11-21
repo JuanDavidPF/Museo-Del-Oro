@@ -20,25 +20,42 @@ body {
 }
 
 .fondo {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
   width: 100%;
   height: 100%;
   text-align: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+
 }
 
 .header {
+
+  display: -webkit-box;
+
+  display: -ms-flexbox;
+
   display: flex;
   width: 85%;
-  margin: 0 auto;
+
+  margin: auto;
   margin-top: 30px;
   padding-bottom: 25px;
   border-bottom: 1px solid #475a5b;
+  -webkit-transition: width 0.5s ease-in-out, height 0.5s ease-in-out;
+  -o-transition: width 0.5s ease-in-out, height 0.5s ease-in-out;
   transition: width 0.5s ease-in-out, height 0.5s ease-in-out;
 }
 
 .back {
-  width: 30px;
+
   cursor: pointer;
 }
 
@@ -47,13 +64,17 @@ body {
   font-family: "Nunito", sans-serif;
   font-weight: 700;
   font-size: 30px;
+  -webkit-transition: font-size 0.5s ease-in-out, margin-top 0.5s ease-in-out;
+  -o-transition: font-size 0.5s ease-in-out, margin-top 0.5s ease-in-out;
   transition: font-size 0.5s ease-in-out, margin-top 0.5s ease-in-out;
 }
 
 .ornament {
-  margin: 0 auto;
+
   margin-top: 10px;
   width: 200px;
+  -webkit-transition: margin-top 0.5s ease-in-out, width 0.5s ease-in-out;
+  -o-transition: margin-top 0.5s ease-in-out, width 0.5s ease-in-out;
   transition: margin-top 0.5s ease-in-out, width 0.5s ease-in-out;
 }
 
@@ -68,6 +89,8 @@ body {
   font-weight: 400;
 
   color: white;
+  -webkit-transition: font-size 0.5s ease-in-out, margin-top 0.5s ease-in-out;
+  -o-transition: font-size 0.5s ease-in-out, margin-top 0.5s ease-in-out;
   transition: font-size 0.5s ease-in-out, margin-top 0.5s ease-in-out;
 }
 
@@ -81,7 +104,12 @@ body {
   color: #10495c;
   font-family: "Nunito", sans-serif;
   border-radius: 30px;
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  -webkit-transition: margin-top 0.5s ease-in-out, width 0.5s ease-in-out, height 0.5s ease-in-out, line-height 0.5s ease-in-out,
+    font-size 0.5s ease-in-out;
+  -o-transition: margin-top 0.5s ease-in-out, width 0.5s ease-in-out, height 0.5s ease-in-out, line-height 0.5s ease-in-out,
+    font-size 0.5s ease-in-out;
   transition: margin-top 0.5s ease-in-out, width 0.5s ease-in-out, height 0.5s ease-in-out, line-height 0.5s ease-in-out,
     font-size 0.5s ease-in-out;
 }
@@ -89,11 +117,15 @@ body {
 .icon {
   margin: auto;
   width: 150px;
+  -webkit-transition: width 0.5s ease-in-out;
+  -o-transition: width 0.5s ease-in-out;
   transition: width 0.5s ease-in-out;
 }
 
 @media (min-width: 500px) {
   .header {
+    -webkit-transition: width 0.5s ease-in-out, height 0.5s ease-in-out;
+    -o-transition: width 0.5s ease-in-out, height 0.5s ease-in-out;
     transition: width 0.5s ease-in-out, height 0.5s ease-in-out;
     height: 35px;
     width: 75%;
@@ -102,18 +134,24 @@ body {
   .titleProfile {
     margin-top: 60px;
     font-size: 50px;
+    -webkit-transition: font-size 0.5s ease-in-out, margin-top 0.5s ease-in-out;
+    -o-transition: font-size 0.5s ease-in-out, margin-top 0.5s ease-in-out;
     transition: font-size 0.5s ease-in-out, margin-top 0.5s ease-in-out;
   }
 
   .ornament {
     margin-top: 20px;
     width: 320px;
+    -webkit-transition: margin-top 0.5s ease-in-out, width 0.5s ease-in-out;
+    -o-transition: margin-top 0.5s ease-in-out, width 0.5s ease-in-out;
     transition: margin-top 0.5s ease-in-out, width 0.5s ease-in-out;
   }
 
   .descripcion {
     font-size: 24px;
     margin-top: 60px;
+    -webkit-transition: font-size 0.5s ease-in-out, margin-top 0.5s ease-in-out;
+    -o-transition: font-size 0.5s ease-in-out, margin-top 0.5s ease-in-out;
     transition: font-size 0.5s ease-in-out, margin-top 0.5s ease-in-out;
   }
 
@@ -123,11 +161,17 @@ body {
     height: 70px;
     line-height: 70px;
     font-size: 25px;
+    -webkit-transition: margin-top 0.5s ease-in-out, width 0.5s ease-in-out, height 0.5s ease-in-out,
+      line-height 0.5s ease-in-out, font-size 0.5s ease-in-out;
+    -o-transition: margin-top 0.5s ease-in-out, width 0.5s ease-in-out, height 0.5s ease-in-out,
+      line-height 0.5s ease-in-out, font-size 0.5s ease-in-out;
     transition: margin-top 0.5s ease-in-out, width 0.5s ease-in-out, height 0.5s ease-in-out,
       line-height 0.5s ease-in-out, font-size 0.5s ease-in-out;
   }
 
   .icon {
+    -webkit-transition: width 0.5s ease-in-out;
+    -o-transition: width 0.5s ease-in-out;
     transition: width 0.5s ease-in-out;
     width: 320px;
   }
@@ -139,6 +183,8 @@ body {
   }
 
   .header {
+    -webkit-transition: width 0.5s ease-in-out, height 0.5s ease-in-out;
+    -o-transition: width 0.5s ease-in-out, height 0.5s ease-in-out;
     transition: width 0.5s ease-in-out, height 0.5s ease-in-out;
     width: 60%;
     height: 50px;
@@ -147,18 +193,24 @@ body {
   .titleProfile {
     margin-top: 60px;
     font-size: 60px;
+    -webkit-transition: font-size 0.5s ease-in-out, margin-top 0.5s ease-in-out;
+    -o-transition: font-size 0.5s ease-in-out, margin-top 0.5s ease-in-out;
     transition: font-size 0.5s ease-in-out, margin-top 0.5s ease-in-out;
   }
 
   .ornament {
     margin-top: 20px;
     width: 400px;
+    -webkit-transition: margin-top 0.5s ease-in-out, width 0.5s ease-in-out;
+    -o-transition: margin-top 0.5s ease-in-out, width 0.5s ease-in-out;
     transition: margin-top 0.5s ease-in-out, width 0.5s ease-in-out;
   }
 
   .descripcion {
     font-size: 30px;
     margin-top: 60px;
+    -webkit-transition: font-size 0.5s ease-in-out, margin-top 0.5s ease-in-out;
+    -o-transition: font-size 0.5s ease-in-out, margin-top 0.5s ease-in-out;
     transition: font-size 0.5s ease-in-out, margin-top 0.5s ease-in-out;
   }
 
@@ -168,12 +220,104 @@ body {
     height: 70px;
     line-height: 70px;
     font-size: 30px;
+    -webkit-transition: margin-top 0.5s ease-in-out, width 0.5s ease-in-out, height 0.5s ease-in-out,
+      line-height 0.5s ease-in-out, font-size 0.5s ease-in-out;
+    -o-transition: margin-top 0.5s ease-in-out, width 0.5s ease-in-out, height 0.5s ease-in-out,
+      line-height 0.5s ease-in-out, font-size 0.5s ease-in-out;
     transition: margin-top 0.5s ease-in-out, width 0.5s ease-in-out, height 0.5s ease-in-out,
       line-height 0.5s ease-in-out, font-size 0.5s ease-in-out;
   }
 
   .icon {
+    -webkit-transition: width 0.5s ease-in-out;
+    -o-transition: width 0.5s ease-in-out;
     transition: width 0.5s ease-in-out;
     width: 400px;
+  }
+}
+
+@media (max-height: 900px) {
+
+
+
+  .icon {
+    -webkit-transition: width 0.5s ease-in-out;
+    -o-transition: width 0.5s ease-in-out;
+    transition: width 0.5s ease-in-out;
+    width: 250px;
+  }
+}
+
+
+@media (max-height: 713px) {
+
+
+  .titleProfile {
+    margin-top: 20px;
+
+  }
+
+
+  .descripcion {
+
+
+    margin-top: 20px;
+    -webkit-transition: font-size 0.5s ease-in-out, margin-top 0.5s ease-in-out;
+    -o-transition: font-size 0.5s ease-in-out, margin-top 0.5s ease-in-out;
+    transition: font-size 0.5s ease-in-out, margin-top 0.5s ease-in-out;
+  }
+
+
+  .icon {
+    -webkit-transition: width 0.5s ease-in-out;
+    -o-transition: width 0.5s ease-in-out;
+    transition: width 0.5s ease-in-out;
+    width: 150px;
+  }
+}
+
+@media (max-height: 595px) {
+
+  .header {
+    padding-bottom: 20;
+    margin-top: 20px;
+
+  }
+
+  .titleProfile {
+
+    font-size: 40px;
+    margin-top: 20px;
+
+  }
+
+  .ornament {
+    display: none;
+  }
+
+
+  .descripcion {
+
+    font-size: 20px;
+
+    margin-top: 10px;
+    margin-bottom: 10px;
+    -webkit-transition: font-size 0.5s ease-in-out, margin-top 0.5s ease-in-out;
+    -o-transition: font-size 0.5s ease-in-out, margin-top 0.5s ease-in-out;
+    transition: font-size 0.5s ease-in-out, margin-top 0.5s ease-in-out;
+  }
+
+  .btn {
+    margin: auto;
+    width: 200px;
+    height: 60px;
+    line-height: 60px;
+  }
+
+  .icon {
+    -webkit-transition: width 0.5s ease-in-out;
+    -o-transition: width 0.5s ease-in-out;
+    transition: width 0.5s ease-in-out;
+    width: 0px;
   }
 }
