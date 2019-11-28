@@ -55,7 +55,7 @@ if (url.includes("?")) {
                 body.classList.add("slideOutLeft");
 
                 let cambio = setTimeout(function () {
-                    document.location.href = "https://kiwigramer2118.github.io/EXTRANGEROS/inex.html"
+                    document.location.href = "https://victorlifting.github.io/Extrangeros-PI/"
 
 
                 }, 1000)
