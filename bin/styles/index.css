@@ -69,9 +69,14 @@ body {
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
-
+    align-items: center;
     margin: auto;
 
+}
+
+.logo {
+    width: 200px;
+    transition: width .5s ease-in-out;
 }
 
 .bienvenidos {
@@ -223,6 +228,11 @@ body {
 @media (max-width: 1000px),
 (max-height: 550px) {
 
+    .logo {
+        width: 150px;
+        transition: width .5s ease-in-out;
+    }
+
     .bienvenidos {
 
         font-size: 30px;
@@ -316,6 +326,11 @@ body {
 @media (max-width: 500px),
 (max-height: 550px) {
 
+    .logo {
+        width: 100px;
+        transition: width .5s ease-in-out;
+    }
+
     .bienvenidos {
 
         font-size: 30px;
@@ -400,6 +415,13 @@ body {
 }
 
 @media (max-width: 350px) {
+
+    
+    .logo {
+        width: 100px;
+        transition: width .5s ease-in-out;
+    }
+    
     .bienvenidos {
 
         font-size: 22px;
@@ -426,6 +448,11 @@ body {
 
 @media (max-width: 200px),
 (max-height: 250px) {
+
+    .logo {
+        width: 50px;
+    }
+    
 
     .bienvenidos {
 
