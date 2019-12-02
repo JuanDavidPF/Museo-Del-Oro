@@ -49,23 +49,23 @@ let CLICKMEPLEASE = setInterval(function () {
 
     alert = parseInt(Math.random() * 7)
 
-    if (contenido.classList.contains("zoomIn")) contenido.classList.remove("zoomIn")
-    if (contenido.classList.contains("bounce")) contenido.classList.remove("bounce")
-    if (contenido.classList.contains("flash")) contenido.classList.remove("flash")
-    if (contenido.classList.contains("pulse")) contenido.classList.remove("pulse")
-    if (contenido.classList.contains("rubberBand")) contenido.classList.remove("rubberBand")
-    if (contenido.classList.contains("shake")) contenido.classList.remove("shake")
-    if (contenido.classList.contains("tada")) contenido.classList.remove("tada")
-    if (contenido.classList.contains("heartBeat")) contenido.classList.remove("heartBeat")
+    if (empezar.classList.contains("zoomIn")) empezar.classList.remove("zoomIn")
+    if (empezar.classList.contains("bounce"))empezar.classList.remove("bounce")
+    if (empezar.classList.contains("flash")) empezar.classList.remove("flash")
+    if (empezar.classList.contains("pulse")) empezar.classList.remove("pulse")
+    if (empezar.classList.contains("rubberBand")) empezar.classList.remove("rubberBand")
+    if (empezar.classList.contains("shake")) empezar.classList.remove("shake")
+    if (empezar.classList.contains("tada")) empezar.classList.remove("tada")
+    if (empezar.classList.contains("heartBeat")) empezar.classList.remove("heartBeat")
 
 
-    if (alert == 0) contenido.classList.add("bounce")
-    if (alert == 1) contenido.classList.add("flash")
-    if (alert == 2) contenido.classList.add("pulse")
-    if (alert == 3) contenido.classList.add("rubberBand")
-    if (alert == 4) contenido.classList.add("shake")
-    if (alert == 5) contenido.classList.add("tada")
-    if (alert == 6) contenido.classList.add("heartBeat")
+    if (alert == 0) empezar.classList.add("bounce")
+    if (alert == 1) empezar.classList.add("flash")
+    if (alert == 2) empezar.classList.add("pulse")
+    if (alert == 3) empezar.classList.add("rubberBand")
+    if (alert == 4) empezar.classList.add("shake")
+    if (alert == 5) empezar.classList.add("tada")
+    if (alert == 6) empezar.classList.add("heartBeat")
 
 }, 10000)
 

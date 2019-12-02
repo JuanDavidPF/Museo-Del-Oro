@@ -77,7 +77,9 @@ body {
 .logo {
     width: 200px;
     transition: width .5s ease-in-out;
+    margin-bottom: 40px;
 }
+
 
 .bienvenidos {
 
@@ -85,12 +87,38 @@ body {
     text-align: center;
     color: #10495C;
 
-    font-size: 60px;
+    font-size: 50px;
     font-weight: 900;
-    margin-bottom: 35px;
+
     -webkit-transition: font-size 0.5s ease-in-out, margin-bottom 0.5s ease-in-out;
     -o-transition: font-size 0.5s ease-in-out, margin-bottom 0.5s ease-in-out;
     transition: font-size 0.5s ease-in-out, margin-bottom 0.5s ease-in-out;
+}
+
+.subTitulo {
+    color: #10495C;
+    font-family: 'Nunito', sans-serif;
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.descripcion {
+    font-family: 'Nunito', sans-serif;
+    font-size: 20px;
+    width: 80%;
+    text-align: center;
+    margin-bottom: 75px;
+}
+
+.foreigners {
+    font-family: 'Nunito', sans-serif;
+    margin-bottom: 15px;
+    color: #10495C;
+    font-size: 30px;
+
+    font-weight: 800;
 }
 
 .btn_empezar {
@@ -99,11 +127,11 @@ body {
     font-family: 'Nunito', sans-serif;
     text-align: center;
     color: white;
-    font-size: 40px;
+    font-size: 30px;
     font-weight: 400;
-    line-height: 100px;
-    width: 444px;
-    height: 100px;
+    line-height: 70px;
+    width: 300px;
+    height: 70px;
     border-radius: 57px;
     background-color: #A7CBCD;
     -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -112,7 +140,7 @@ body {
     -webkit-transition: font-size 0.5s ease-in-out, line-height 0.5s ease-in-out, width 0.5s ease-in-out, height 0.5s ease-in-out;
     -o-transition: font-size 0.5s ease-in-out, line-height 0.5s ease-in-out, width 0.5s ease-in-out, height 0.5s ease-in-out;
     transition: font-size 0.5s ease-in-out, line-height 0.5s ease-in-out, width 0.5s ease-in-out, height 0.5s ease-in-out;
-
+    margin-bottom: 25px;
 }
 
 .headerLeft {
@@ -121,8 +149,6 @@ body {
     -webkit-transition: width 0.5s ease-in-out, margin-left 0.5s ease-in-out;
     -o-transition: width 0.5s ease-in-out, margin-left 0.5s ease-in-out;
     transition: width 0.5s ease-in-out, margin-left 0.5s ease-in-out;
-
-
 
 }
 
@@ -243,6 +269,19 @@ body {
         transition: font-size 0.5s ease-in-out, margin-bottom 0.5s ease-in-out;
     }
 
+    .subTitulo {
+
+        font-size: 25px;
+
+    }
+
+    .descripcion {
+
+        font-size: 20px;
+        width: 80%;
+
+    }
+
     .btn_empezar {
 
 
@@ -255,6 +294,13 @@ body {
         transition: font-size 0.5s ease-in-out, line-height 0.5s ease-in-out, width 0.5s ease-in-out, height 0.5s ease-in-out;
 
     }
+
+    .foreigners {
+
+        font-size: 15px;
+
+    }
+
 
     .headerLeft {
 
@@ -340,17 +386,40 @@ body {
         transition: font-size 0.5s ease-in-out, margin-bottom 0.5s ease-in-out;
     }
 
+
+    .subTitulo {
+
+        width: 60%;
+        font-size: 20px;
+
+    }
+
+    .descripcion {
+
+        font-size: 14px;
+        width: 80%;
+        margin-bottom: 35px;
+
+    }
+
     .btn_empezar {
 
 
-        font-size: 25px;
-        line-height: 50px;
-        width: 200px;
-        height: 50px;
+        font-size: 20px;
+        line-height: 40px;
+        width: 150px;
+        height: 40px;
         -webkit-transition: font-size 0.5s ease-in-out, line-height 0.5s ease-in-out, width 0.5s ease-in-out, height 0.5s ease-in-out;
         -o-transition: font-size 0.5s ease-in-out, line-height 0.5s ease-in-out, width 0.5s ease-in-out, height 0.5s ease-in-out;
         transition: font-size 0.5s ease-in-out, line-height 0.5s ease-in-out, width 0.5s ease-in-out, height 0.5s ease-in-out;
 
+
+    }
+
+
+    .foreigners {
+
+        font-size: 15px;
 
     }
 
@@ -416,16 +485,25 @@ body {
 
 @media (max-width: 350px) {
 
-    
+
     .logo {
         width: 100px;
         transition: width .5s ease-in-out;
+        margin-bottom: 10px;
     }
-    
+
     .bienvenidos {
 
         font-size: 22px;
 
+    }
+
+    .descripcion{
+        font-size: 12px;
+    }
+
+    .subTitulo {
+        font-size: 15px;
     }
 
     .btn_empezar {
@@ -452,7 +530,7 @@ body {
     .logo {
         width: 50px;
     }
-    
+
 
     .bienvenidos {
 
