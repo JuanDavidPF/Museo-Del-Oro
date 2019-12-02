@@ -8,6 +8,7 @@ let ornamento = document.querySelector(".ornament")
 let icon = document.querySelector(".icon")
 let back = document.querySelector(".back")
 let boton = document.querySelector(".btn")
+let descripcion = document.querySelector(".descripcion")
 
 if (url.includes("?")) {
 
@@ -25,7 +26,7 @@ if (url.includes("?")) {
             encabezado.style.borderColor = "#44240F"
             ornamento.src = "./../../data/img/ornamento4.png"
             icon.src = "./../../data/img/colIcon.png"
-
+            descripcion.textContent = "¿Que tanto conoces sobre la cultura Calima?. Atrevete a vivir el reto del gran Cacique, donde coonocerás las palabras más icónicas de la cultura Calima a través de un juego de charadas."
 
             boton.addEventListener("click", function () {
 
@@ -45,6 +46,8 @@ if (url.includes("?")) {
             body.style.backgroundColor = "#A7CBCD"
             body.style.color = "#475A5B"
             title.textContent = "Extranjeros"
+            descripcion.textContent = "Learn more information about the most spectacular pieces of the Calima Culture and check out what was happening in other parts of the world meanwhile Calima culture developed their pieces."
+
             encabezado.style.borderColor = "#44240F"
             ornamento.src = "./../../data/img/ornamento3.png"
             icon.src = "./../../data/img/extIcon.png"
@@ -70,6 +73,7 @@ if (url.includes("?")) {
             title.textContent = "Niños"
             encabezado.style.borderColor = "#65411D"
             ornamento.src = "./../../data/img/ornamento2.png"
+            descripcion.textContent="¿Sabes cuales son los animales más representativos de la cultura Calima? Descúbrelos a través de adivinanzas místicas las cuales te darán las pistas necesarias para armar el rompecabezas que te revelará los secretos."
             icon.src = "./../../data/img/ninIcon.png"
 
             boton.addEventListener("click", function () {
@@ -93,6 +97,7 @@ if (url.includes("?")) {
             encabezado.style.borderColor = "#2F304A"
             ornamento.src = "./../../data/img/ornamento1.png"
             icon.src = "./../../data/img/uniIcon.png"
+            descripcion.textContent="¿Necesitas información práctica de la cultura Calima para desarrollar algún trabajo? aquí encontrarás infografías con datos sencillos de leer, escanea los códigos QR de las obras de tu interés para encontrar información relacionada."
 
 
             boton.addEventListener("click", function () {
@@ -118,6 +123,7 @@ if (url.includes("?")) {
             encabezado.style.borderColor = "#3E3724"
             ornamento.src = "./../../data/img/ornamento5.png"
             icon.src = "./../../data/img/disIcon.png"
+            descripcion.textContent="Recorre la exposición del museo guiado por un texto en Braille y quédate inmerso en  las montañas calimas a través de una narración sonora que te llevará a tiempos pasados."
 
 
             boton.addEventListener("click", function () {
