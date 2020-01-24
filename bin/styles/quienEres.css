@@ -149,6 +149,8 @@ body {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
+    width: 20px;
+    font-size: 15px;
 
 }
 
@@ -256,7 +258,7 @@ border-radius: 30px;
     .perfilIcon {
         padding-left: 10px;
         padding-right: 10px;
-        width: 60px;
+        width: 50px;
         -webkit-transition: width 0.5s ease-in-out;
         -o-transition: width 0.5s ease-in-out;
         transition: width 0.5s ease-in-out;
